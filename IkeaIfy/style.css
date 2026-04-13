@@ -1,0 +1,14 @@
+
+body{
+    background-color: rgb(36, 36, 36);
+   background-image: image-set("ikeaLogo/icon-256.png");
+    background-size: 9px;
+    width: 500px;
+    height: 400px;
+}
+p{
+font-size: 40vw;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: aliceblue;
+width: 20%;
+}

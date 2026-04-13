@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Ikea",
+  "description": "Meatballs furniture idk",
+  "version": "1.0",
+  "icons": {
+    "256": "ikeaLogo/icon-256.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "ikeaLogo/icon-256.png",
+    "default_title": "Ikea oh no ikea"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["ikeaLogo/ikea.png", "ikeaLogo/icon-256.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
